@@ -13,25 +13,25 @@ from time import sleep
 id_sensor = 1
 
 hum = ['44.1',
-  '44.3',
+  '42.3',
   '44.1',
   '44.2',
   '44.2',
-  '44.2',
-  '44.3',
+  '46.2',
+  '47.3',
+  '45.1',
+  '46.0',
   '44.1',
-  '44.0',
-  '44.1',
-  '44.1',
+  '41.1',
  ]
 
 temp = ['22.5',
-  '22.5',
-  '22.5',
+  '22.0',
+  '22.1',
   '22.4',
   '22.4',
-  '22.5',
-  '22.5',
+  '22.7',
+  '23.2',
   '22.5',
   '22.4',
   '22.5',
@@ -57,7 +57,7 @@ if __name__ == '__main__':
   with open(config_path or os.path.dirname(os.path.abspath(__file__)) + "/../config/config.json") as json_file:
     config = json.load(json_file)
 
-  for j in range(50):
+  for j in range(500):
     for i in range(len(hum)):
 
       print("humidity: " + str(hum[i]))
